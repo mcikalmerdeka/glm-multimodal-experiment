@@ -1,0 +1,25 @@
+[project]
+name = "glm-5-3-flash"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Cikal Merdeka", email = "mcikalmerdeka@gmail.com" }
+]
+requires-python = ">=3.14.3"
+dependencies = [
+    "openai>=3.14.1",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+glm-5-3-flash = "glm_5_3_flash:main"
+
+[build-system]
+requires = ["uv_build>=0.12.14,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
